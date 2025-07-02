@@ -1,0 +1,195 @@
+body {
+  background-color: #0a0a12;
+  background-image: linear-gradient(to bottom, #0a0a12, #1a1a2e);
+  color: #e0e0e0;
+  line-height: 1.7;
+  font-weight: 400;
+  padding: 0;
+  font-family: monospace;
+}
+
+/* Header - Cyber terminal style */
+header {
+  background-color: #000;
+  border-bottom: 3px solid #00ff9d;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+h1 {
+  color: #00ff9d;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  border: 2px solid #00ff9d;
+  border-radius: 5px;
+  padding: 10px;
+  display: inline-block;
+}
+
+h2 {
+  color: #00a8ff;
+  text-decoration: underline;
+  text-transform: uppercase;
+  border-left: 4px solid #00a8ff;
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+h3 {
+  color: #ff2d75;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-bottom: 2px dotted #ff2d75;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+hr {
+  border: 1px dashed #00ff9d;
+  border-radius: 5px;
+  background-color: transparent;
+  height: 1px;
+}
+
+/* Navigation - Cyberpunk style */
+nav table {
+  border: 2px solid #00ff9d;
+  border-radius: 0;
+  background-color: #000;
+  padding: 0;
+  margin: 20px auto;
+}
+
+nav a {
+  color: #00ff9d;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-right: 1px solid #00ff9d;
+}
+
+nav a:last-child {
+  border-right: none;
+}
+
+/* Main content - Hacker terminal style */
+main {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid #333;
+  border-radius: 0;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+article {
+  border-left: 3px solid #00a8ff;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+/* Images - Glow effect */
+img {
+  border: 2px solid #00ff9d;
+  border-radius: 0;
+  padding: 5px;
+  background-color: #000;
+  box-shadow: 0 0 10px #00ff9d;
+}
+
+/* Tables - Matrix style */
+table {
+  border: 2px solid #00ff9d;
+  border-radius: 0;
+  background-color: #000;
+  padding: 10px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+/* Lists - Cyber bullet points */
+ul {
+  padding-left: 20px;
+  line-height: 2;
+}
+
+li {
+  padding: 5px 0;
+  list-style-type: "> ";
+  color: #00ff9d;
+}
+
+li::marker {
+  color: #ff2d75;
+}
+
+/* Special elements */
+mark {
+  background-color: #000;
+  color: #00ff9d;
+  font-weight: 700;
+  padding: 2px 5px;
+  border: 1px solid #00ff9d;
+}
+
+blockquote {
+  border-left: 3px solid #ff2d75;
+  padding-left: 15px;
+  color: #ccc;
+  font-style: italic;
+}
+
+/* Sidebar - Console style */
+aside {
+  background-color: #000;
+  border: 2px solid #00a8ff;
+  border-radius: 0;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+aside hr {
+  border: 1px dashed #ff2d75;
+  width: 50px;
+}
+
+/* Footer - Status bar style */
+footer {
+  background-color: #000;
+  color: #00ff9d;
+  padding: 1rem;
+  text-align: center;
+  border-top: 3px solid #00ff9d;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* Links - Hover glow */
+a {
+  color: #00a8ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 0 0 5px #00a8ff;
+}
+
+/* Strong elements - Error message style */
+strong {
+  font-weight: 700;
+  color: #ff2d75;
+}
+
+/* Time elements - Timestamp style */
+time {
+  font-weight: 600;
+  color: #00ff9d;
+  letter-spacing: 1px;
+}
