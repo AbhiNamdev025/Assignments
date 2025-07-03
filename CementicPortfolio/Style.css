@@ -3,6 +3,9 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  background-color: #ffffff;
+  color: #333333;
+  text-align: left;
 }
 
 /* Header Styles */
@@ -11,19 +14,22 @@ header {
   color: white;
   padding: 1rem;
   text-align: center;
+  border-bottom: 3px solid #1a252f;
 }
 
 header h1 {
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0;
   padding: 0.5rem 0;
+  text-decoration: underline;
+  border-radius: 4px;
+  color: black;
 }
 
 header h3 {
   font-weight: 400;
-  margin: 0;
   padding-bottom: 0.5rem;
+  text-transform: capitalize;
 }
 
 /* Nav */
@@ -31,6 +37,8 @@ nav {
   background-color: #34495e;
   padding: 0.5rem;
   text-align: center;
+  border-bottom: 2px solid #2c3e50;
+  border-top: 2px solid #2c3e50;
 }
 
 nav a {
@@ -38,19 +46,24 @@ nav a {
   text-decoration: none;
   font-weight: 600;
   padding: 0.5rem 1rem;
-  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+nav a:hover {
+  border: 1px solid white;
 }
 
 /* Main Content */
 main {
   padding: 1rem;
-  max-width: 900px;
-  margin: 0 auto;
+  background-color: #ecf0f1;
+  border-radius: 5px;
 }
 
 article {
   background-color: white;
-  border: 1px solid #ecf0f1;
+  border: 1px solid #bdc3c7;
   border-radius: 5px;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -59,26 +72,30 @@ article {
 /* Tables */
 table {
   width: 100%;
-  border: 1px solid #ecf0f1;
+  border: 1px solid #bdc3c7;
   border-radius: 5px;
   padding: 0.5rem;
+  background-color: white;
 }
 
 th {
   font-weight: 700;
   text-align: left;
   padding: 0.5rem;
+  border-bottom: 2px solid #bdc3c7;
 }
 
 td {
   padding: 0.5rem;
+  border-bottom: 1px solid #ecf0f1;
 }
 
 /* Image */
 img {
-  border: 3px solid white;
+  border: 3px solid #2c3e50;
   border-radius: 50%;
   padding: 2px;
+  background-color: #ecf0f1;
 }
 
 /* Footer */
@@ -87,27 +104,32 @@ footer {
   color: white;
   padding: 1rem;
   text-align: center;
+  border-top: 3px solid #1a252f;
 }
 
-/* OT */
+/* Headings */
 h2 {
   color: #2c3e50;
   font-weight: 600;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #bdc3c7;
+  text-transform: uppercase;
 }
 
 h3 {
   color: rgb(137, 172, 179);
   font-weight: 600;
+  text-decoration: underline;
 }
 
 strong {
   font-weight: 700;
+  color: #2c3e50;
 }
 
 /* Links */
 a {
   color: #3498db;
   text-decoration: none;
+  font-weight: 600;
 }
