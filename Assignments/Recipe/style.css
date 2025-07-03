@@ -6,6 +6,8 @@ body {
   line-height: 1.8;
   font-weight: 400;
   text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 /* Header */
@@ -22,21 +24,21 @@ h1 {
   text-transform: uppercase;
   text-decoration: underline dotted;
   font-weight: 800;
-  letter-spacing: 3px;
+  padding: 10px;
 }
 
 header p {
   color: #00a8ff;
   font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  padding: 5px;
+  text-align: center;
 }
 
 /* HR */
 hr {
   border: 1px solid #00ff9d;
   border-radius: 5px;
-  background-color: transparent;
   width: 90%;
   margin: 2rem auto;
 }
@@ -50,13 +52,22 @@ table {
   margin: 2rem auto;
 }
 
+td {
+  padding: 15px;
+  border-right: 1px dashed #00a8ff;
+}
+
+td:last-child {
+  border-right: none;
+}
+
 /* Vertical Text */
 h3 {
   color: #ff2d75;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 4px;
   line-height: 2;
+  padding: 10px;
 }
 
 /* Headings */
@@ -65,11 +76,11 @@ h2 {
   text-decoration: underline;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 2px;
   padding-bottom: 0.5rem;
+  text-align: left;
 }
 
-/* Neon Images */
+/* Images */
 img {
   border: 3px solid #00ff9d;
   border-radius: 10px;
@@ -77,7 +88,7 @@ img {
   background-color: #000;
 }
 
-/* Cyber Video Frame */
+/* Video */
 video {
   border: 3px double #ff2d75;
   border-radius: 10px;
@@ -85,7 +96,7 @@ video {
   background-color: #000;
 }
 
-/* Futuristic Lists */
+/* Lists */
 ul,
 ol {
   padding-left: 2rem;
@@ -98,7 +109,7 @@ li {
   color: #e0e0ff;
 }
 
-/* Cyber Footer */
+/* Footer */
 footer {
   background-color: #000;
   color: #00ff9d;
@@ -107,26 +118,22 @@ footer {
   border-top: 3px solid #00ff9d;
   border-radius: 30px 30px 0 0;
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 footer p {
   line-height: 1.6;
   font-weight: 300;
+  padding: 5px;
+  text-align: center;
 }
 
-/* Cyber Text Elements */
-strong {
-  color: #ff2d75;
-  font-weight: 700;
-}
-em {
-  color: #00a8ff;
-  font-weight: 500;
+/* Other Elements */
+p {
+  padding: 10px;
+  text-align: justify;
 }
 
-/* Timeline Effect */
 section {
-  padding-left: 1rem;
+  padding: 1rem;
   margin: 1rem 0;
 }
