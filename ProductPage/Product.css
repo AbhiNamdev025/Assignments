@@ -8,6 +8,11 @@ body {
 }
 
 /*  Header Styling */
+#Product-Title {
+  border: none;
+  background-color: #f8f4ee;
+}
+
 h1 {
   color: #4e342e;
   text-transform: uppercase;
@@ -32,15 +37,8 @@ h3 {
   color: #6d4c41;
   text-transform: capitalize;
   font-weight: 600;
-  border-bottom: 1px dashed #8d6e63;
   padding-bottom: 0.3rem;
 }
-#noborder {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
 /*  HR */
 hr {
   border: 1px groove #8d6e63;
@@ -56,7 +54,6 @@ table {
   padding: 1.2rem;
 }
 
-/* Premium Table Variation */
 table[border="1"] {
   border: 3px outset #5d4037;
   border-radius: 15px;
@@ -154,4 +151,7 @@ b,
 strong {
   font-weight: 700;
   color: #4e342e;
+}
+#Footer-Table {
+  border: none;
 }
