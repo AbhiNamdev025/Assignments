@@ -22,10 +22,11 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   padding: 5px 10px;
+  border-radius: 4px;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  background-color: #34495e;
 }
 
 nav i {
