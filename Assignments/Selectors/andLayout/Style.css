@@ -29,7 +29,7 @@ td {
   background-color: #1a3e72;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 1;
   padding: 0;
   margin: 0;
 }
@@ -140,7 +140,7 @@ td {
   display: inline-block;
   color: #1a3e72;
   font-weight: bold;
-  cursor: help;
+  cursor: no-drop;
 }
 
 .tooltip-text {
