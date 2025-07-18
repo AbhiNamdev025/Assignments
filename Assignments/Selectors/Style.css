@@ -153,13 +153,20 @@ nav ul {
 }
 
 nav li {
-  display: block;
+  display: inline-block;
   margin: 0 10px;
+  padding: 5px 8px;
+  border-radius: 10px;
 }
 
 nav a {
   color: white;
   text-decoration: none;
+}
+
+nav li:hover {
+  background-color: #124313;
+  transform: scale(1.1);
 }
 
 footer {
@@ -181,7 +188,6 @@ footer p {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  transition: all 0.3s;
 }
 
 table {
@@ -239,4 +245,39 @@ label {
 ::marker {
   color: #3e8e41;
   content: "👉🏻";
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 90%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
 }
