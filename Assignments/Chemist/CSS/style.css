@@ -85,7 +85,7 @@ header {
   border-radius: 5px;
 }
 
-.nav-links button {
+.nav-links .btn {
   color: white;
   background-color: #4887a2;
   border-radius: 5px;
@@ -94,7 +94,9 @@ header {
 }
 
 .nav-links a:hover {
-  background-color: rgb(234, 227, 227);
+  background-color: #306179;
+  transform: scale(1.03);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.655);
 }
 
 /* Dropdown */
