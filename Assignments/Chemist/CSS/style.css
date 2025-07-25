@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
-    Geneva, Verdana, sans-serif; */
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  transition: all 0.3s ease;
+  font-family: "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
+    Geneva, Verdana, sans-serif;
 }
 
 img {
@@ -137,7 +137,7 @@ header {
 
 /* Hero Section */
 .hero {
-  background-image: url(/Images/Hero.png);
+  background-image: url(/Chemist/Images/Hero.png);
   height: 500px;
   background-size: cover;
   background-repeat: no-repeat;

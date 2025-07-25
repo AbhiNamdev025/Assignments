@@ -1,4 +1,9 @@
-/* Ambala Tourism - Unified Stylesheet */
+/* Ambala Tourism  */
+
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
