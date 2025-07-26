@@ -11,7 +11,7 @@ body {
 aside {
   width: 220px;
   height: 100vh;
-  background: #bfbcb3;
+  background: radial-gradient(circle, #bfbcb3, #f5f2e7);
   position: fixed;
   top: 0;
   left: 0;
@@ -127,7 +127,7 @@ main div:hover {
   transition: transform 0.3s;
 }
 .image-gallery img:hover {
-  transform: scale(1.1);
+  transform: scale(1.1) rotate(2deg);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -138,7 +138,7 @@ main div:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 50, 30, 0.7);
+  background: #bfbcb3a9;
   display: none;
   z-index: 999;
 }
@@ -151,7 +151,7 @@ main div:hover {
 
 .popup-content {
   background: #fff;
-  color: #256a57;
+  color: #555;
   max-width: 400px;
   padding: 30px;
   border-radius: 12px;
@@ -166,12 +166,12 @@ main div:hover {
   right: 15px;
   text-decoration: none;
   font-size: 24px;
-  color: #256a57;
+  color: #c1bdb3;
   font-weight: bold;
 }
 
 .close-btn:hover {
-  color: #1e5948;
+  color: #c8c5bc;
 }
 .popup-link {
   text-decoration: none;
