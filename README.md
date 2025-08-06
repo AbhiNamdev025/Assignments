@@ -10,4 +10,4 @@
 7.	 Nursery Webpage
 8.	 Coaching Center Webpage
 9.	 My City Tourism 
-10.	Himalayas Tourism (Created in Selectors, Layout & Box Model assignment)
+10.	Himalayas Tourism (Created in Selectors, Layout & Box Model assignment )
