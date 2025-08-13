@@ -104,10 +104,15 @@ nav {
 .nav-links a:active::after {
   width: 100%;
 }
-
+.menu-toggle {
+  display: none;
+}
+.hamburger {
+  display: none;
+}
 .adopt-now {
   background: #a68c6d;
-  color: #555 !important;
+  color: #555 !important ;
   border-radius: 15px;
   transition: all 0.4s ease-in-out;
   width: 100px;
@@ -116,7 +121,9 @@ nav {
   justify-content: center;
   align-items: center;
 }
-
+.adopt-now::after {
+  display: none;
+}
 .adopt-now:hover {
   background: #847058;
   color: black !important ;
@@ -525,4 +532,74 @@ footer {
   color: #666;
   font-style: italic;
   margin: 0;
+}
+
+@media (max-width: 1080px) {
+  .testimonial p,
+  .testimonial em {
+    display: flex;
+    position: static;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 100;
+    color: #847058;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 40%;
+    background: #f5eee5;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    padding: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 12px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(132, 112, 88, 0.1);
+  }
+  .adopt-now {
+    background: none;
+    justify-content: flex-start;
+  }
+  .steps {
+    flex-wrap: wrap;
+  }
+
+  .popup-content {
+    width: 85%;
+    padding: 20px;
+  }
 }
