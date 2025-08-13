@@ -55,19 +55,10 @@ h1::after {
 .cards-container {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.container2 {
-  margin-top: 2rem;
-}
-.container3 {
-  margin-top: 2rem;
-}
-.container4 {
-  margin-top: 2rem;
 }
 
 /* Card Styles */
@@ -183,7 +174,7 @@ h1::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  width: 550px;
 }
 .about-card img {
   border-radius: 50%;
