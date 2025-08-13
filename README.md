@@ -1,6 +1,6 @@
 ! Assignments for MERN COURSE !
 
-👉🏻 Ten Webpages in HTML and CSS.
+👉🏻 Assignments in HTML and CSS.
 1.	 Recipe 
 2.	 Portfolio 
 3.	 Product 
