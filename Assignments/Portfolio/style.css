@@ -12,7 +12,7 @@ body {
   font-family: "Delius", cursive;
   line-height: 1.6;
   color: #333;
-  background-color: #f6f7fb;
+  background: linear-gradient(135deg, #faf9f6, #f0f8ff);
   overflow-x: hidden;
 }
 
@@ -114,11 +114,11 @@ img {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+  /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
     url("/Images/hero.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 .home-content {
@@ -509,31 +509,6 @@ img {
   transition: width 1.5s ease;
 }
 
-.skill-progress::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.5),
-    transparent
-  );
-  animation: shine 2s infinite;
-}
-
-@keyframes shine {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-
 .html {
   width: 95%;
 }
@@ -585,7 +560,7 @@ img {
   height: 250px;
   position: relative;
   transform-style: preserve-3d;
-  transition: transform 0.8s ease;
+  transition: transform 0.5s ease;
   cursor: pointer;
 }
 
@@ -865,5 +840,4 @@ img {
 
 .form-group textarea {
   min-height: 150px;
-  resize: vertical;
 }
