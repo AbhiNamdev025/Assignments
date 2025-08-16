@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +8,8 @@
   transition: all 0.3s ease-in-out;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Delius", cursive;
   line-height: 1.6;
   color: #333;
   background-color: #f6f7fb;
@@ -116,7 +115,7 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
-    url("./Images/hero.jpg");
+    url("/Images/hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -207,6 +206,7 @@ img {
 
 /* Sidebar */
 .sidebar {
+  font-family: "Poppins", sans-serif;
   width: 80px;
   height: 100vh;
   background-color: #fff;
