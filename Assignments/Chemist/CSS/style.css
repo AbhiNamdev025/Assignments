@@ -374,7 +374,7 @@ li::before {
   cursor: pointer;
   opacity: 0;
   transform: translateY(30px);
-  animation: fadeSlideIn 1s 2.5s forwards;
+  animation: fadeSlideIn 1s 2.5s alternate;
 }
 
 .slide button:hover {
