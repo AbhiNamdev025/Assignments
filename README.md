@@ -1,5 +1,6 @@
 ! Assignments for MERN COURSE !
 
+
 👉🏻 Assignments in HTML and CSS.
 1.	 Recipe 
 2.	 Portfolio 
@@ -13,4 +14,4 @@
 10.	Himalayas Tourism ( Created in Selectors, Layout & Box Model assignment )
 11.	Nike India Home Page UI Replication
 
-& Other Assignments Too
+& Other Assignments 
