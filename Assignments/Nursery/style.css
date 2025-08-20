@@ -8,6 +8,9 @@ body {
   background: linear-gradient(to bottom right, #f5f2e7, #c1bdb3);
   color: #333;
 }
+a {
+  text-decoration: none;
+}
 aside {
   width: 220px;
   height: 100vh;
@@ -206,5 +209,58 @@ footer {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* HAM */
+.hamburger {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 1100;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger span {
+  display: block;
+  height: 4px;
+  background: #333;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  aside {
+    position: fixed;
+    left: -240px;
+    top: 0;
+    height: 100%;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+
+  #menu-toggle:checked ~ aside {
+    left: 0;
+  }
+
+  main {
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+  }
+  #menu-toggle:checked ~ main {
+    margin-left: 240px;
+  }
+
+  .hamburger {
+    display: flex;
   }
 }
