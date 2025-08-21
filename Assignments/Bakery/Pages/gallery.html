@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
     <aside>
       <h1>Frost Bloom</h1>
       <a href="../index.html" title="Go to Home">Home</a>
@@ -31,52 +37,82 @@
       <div class="section">
         <h3>Cake Gallery</h3>
         <div class="gallery-grid">
-          <img
-            src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d"
-            alt="Wedding Cake"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1552689486-f6773047d19f"
-            alt="Birthday Cake"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1562440499-64c9a111f713"
-            alt="Custom Cake"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b"
-            alt="Cupcakes"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1611293388250-580b08c4a145"
-            alt="Chocolate Cake"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1542826438-bd32f43d626f"
-            alt="Specialty Cake"
-          />
+          <div class="gallery-grid-item">
+            <h4>Wedding Cakes</h4>
+            <img
+              src="https://www.doorstepcake.com/wp-content/uploads/2023/09/romantic-wedding-cake.jpg"
+              alt="Wedding Cake"
+            />
+          </div>
+          <div class="gallery-grid-item">
+            <h4>Birthday Cakes</h4>
+            <img
+              src="https://b3075642.smushcdn.com/3075642/wp-content/uploads/Birthday-Cake-1.png?lossy=1&strip=1&webp=1"
+              alt="Birthday Cake"
+            />
+          </div>
+          <div class="gallery-grid-item">
+            <h4>Custom Cakes</h4>
+            <img
+              src="https://liliyum.com/cdn/shop/products/rengokucake_2400x.jpg?v=1658139767"
+              alt="Custom Cake"
+            />
+          </div>
+          <div class="gallery-grid-item">
+            <h4>Cupcakes</h4>
+            <img
+              src="https://www.foodnetwork.com/content/dam/images/food/fullset/2006/6/13/0/tmsp01_choc_cupcakes1.jpg"
+              alt="Cupcakes"
+            />
+          </div>
+          <div class="gallery-grid-item">
+            <h4>Chocolate Cakes</h4>
+            <img
+              src="https://www.fnp.com/images/pr/l/v20240909174718/velvety-chocolate-truffle-cakes-half-kg_1.jpg"
+              alt="Chocolate Cake"
+            />
+          </div>
+          <div class="gallery-grid-item">
+            <h4>Festival Cakes</h4>
+            <img
+              src="https://luvflowercake.com/wp-content/uploads/2023/03/1-21.webp"
+              alt="Festival Cakes"
+            />
+          </div>
         </div>
       </div>
 
       <div class="section">
         <h3>Bakery Behind the Scenes</h3>
         <div class="gallery-grid">
-          <img
-            src="https://plus.unsplash.com/premium_photo-1714145990684-3bba4d2aff5b?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2FrZSUyMG1ha2luZ3xlbnwwfHwwfHx8MA%3D%3D "
-            alt="Baking Process"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1632681382835-87ad6c0bf9bb?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNha2UlMjBiYWtlcnl8ZW58MHx8MHx8fDA%3D"
-            alt="Decorating"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1590080876351-941da357bde6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmFraW5nJTIwaW5ncmVkaWVudHN8ZW58MHx8MHx8fDA%3D"
-            alt="Ingredients"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1658040528782-eca4ba3cd57d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJha2VyfGVufDB8fDB8fHww"
-            alt="Our Bakers"
-          />
+          <div class="gallery-grid-item">
+            <h4>Decorating</h4>
+            <img
+              src="https://plus.unsplash.com/premium_photo-1714145990684-3bba4d2aff5b?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2FrZSUyMG1ha2luZ3xlbnwwfHwwfHx8MA%3D%3D"
+              alt="Decorating"
+            />
+          </div>
+          <div class="gallery-grid-item">
+            <h4>Serving</h4>
+            <img
+              src="https://images.unsplash.com/photo-1632681382835-87ad6c0bf9bb?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNha2UlMjBiYWtlcnl8ZW58MHx8MHx8fDA%3D"
+              alt="Serving"
+            />
+          </div>
+          <div class="gallery-grid-item">
+            <h4>Ingredients</h4>
+            <img
+              src="https://images.unsplash.com/photo-1590080876351-941da357bde6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmFraW5nJTIwaW5ncmVkaWVudHN8ZW58MHx8MHx8fDA%3D"
+              alt="Ingredients"
+            />
+          </div>
+          <div class="gallery-grid-item">
+            <h4>Our Bakers</h4>
+            <img
+              src="https://images.unsplash.com/photo-1658040528782-eca4ba3cd57d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJha2VyfGVufDB8fDB8fHww"
+              alt="Our Bakers"
+            />
+          </div>
         </div>
       </div>
 

@@ -90,6 +90,21 @@ main {
 .section h3 {
   color: #256a57;
   margin-bottom: 15px;
+  font-weight: bolder;
+  font-size: xx-large;
+  position: relative;
+}
+
+.section h3::after {
+  content: "";
+  display: block;
+  margin: 10px 0;
+  width: 100px;
+  height: 3px;
+  background-color: #3a715f;
+  border-radius: 3px;
+  left: 2rem;
+  position: inherit;
 }
 .cakes-gallery img {
   width: 180px;
@@ -137,13 +152,14 @@ main {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  margin-top: 10px;
-  transition: background 0.3s, transform 0.2s;
   text-decoration: none;
+  font-size: 1rem;
+  display: inline-block;
+  transition: background 0.3s, transform 0.3s;
 }
 .btn:hover {
   background: #1e5948;
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 .popup {
@@ -223,7 +239,7 @@ footer {
   background: #b6dfc8;
   font-weight: bold;
 }
-
+/* 
 .menu-category {
   margin-bottom: 30px;
 }
@@ -240,6 +256,16 @@ footer {
   color: #256a57;
   margin: 0 0 5px 0;
 }
+.menu-item img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+.menu-item a {
+  float: right;
+}
 
 .price {
   float: right;
@@ -250,6 +276,79 @@ footer {
 .note {
   font-style: italic;
   color: #666;
+} */
+
+/* MENU PAGE STYLING */
+.menu-category {
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.menu-item {
+  background: linear-gradient(to bottom right, #ffffff, #f3fdf9);
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 5px solid #256a57;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item h4 {
+  color: #256a57;
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+}
+
+.menu-item p {
+  margin: 0 0 10px 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.menu-item img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 10px 0;
+  transition: transform 0.3s;
+}
+
+.menu-item img:hover {
+  transform: scale(1.05);
+}
+
+.menu-item a.btn {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.price {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #256a57;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.note {
+  font-style: italic;
+  color: #666;
+  text-align: center;
+  margin: 15px 0;
 }
 
 .gallery-grid {
@@ -268,6 +367,32 @@ footer {
 
 .gallery-grid img:hover {
   transform: scale(1.03);
+}
+
+.gallery-grid-item h4 {
+  background: #b6dfc8;
+  color: black;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/* .gallery-grid-item {
+  background: linear-gradient(to bottom right, #ffffff, #f3fdf9);
+  padding: 20px;
+  border-left: 5px solid #256a57;
+  border-top: 5px solid #256a57;
+  border-bottom: 5px solid #256a57;
+  border-radius: 0px 25px 25px 0px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+} */
+.gallery-grid-item {
+  background: linear-gradient(to bottom right, #ffffff, #f3fdf9);
+  padding: 20px;
+  border: 3px solid #b6dfc8;
+  border-right: none;
+  border-radius: 0 25px 25px 0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .order-form,
@@ -382,17 +507,57 @@ footer {
   border-bottom: none;
 }
 
+/* HAM */
+.hamburger {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 1100;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger span {
+  display: block;
+  height: 4px;
+  background: #333;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+#menu-toggle {
+  display: none;
+}
 @media (max-width: 768px) {
   aside {
-    width: 100%;
-    height: auto;
-    position: relative;
+    position: fixed;
+    left: -240px;
+    top: 0;
     padding: 15px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+  #menu-toggle:checked ~ aside {
+    left: 0;
   }
 
   main {
     margin-left: 0;
+    transition: margin-left 0.3s ease;
     padding: 15px;
+  }
+  #menu-toggle:checked ~ main {
+    margin-left: 240px;
+  }
+
+  .hamburger {
+    display: flex;
   }
 
   .hero h2 {
