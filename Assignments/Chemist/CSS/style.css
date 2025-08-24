@@ -175,8 +175,7 @@ header {
 }
 
 button:hover {
-  transform: scale(1.02);
-  box-shadow: 1px 1px 5px black;
+  transform: scale(1.05);
 }
 
 @keyframes fadeSlideIn {
@@ -381,7 +380,7 @@ li::before {
   background-color: #306179;
 }
 
-/* Animation Keyframes */
+/* Animation */
 @keyframes slide {
   0% {
     transform: translateX(0);
