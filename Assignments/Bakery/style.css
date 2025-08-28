@@ -377,15 +377,7 @@ footer {
   border-radius: 6px;
   cursor: pointer;
 }
-/* .gallery-grid-item {
-  background: linear-gradient(to bottom right, #ffffff, #f3fdf9);
-  padding: 20px;
-  border-left: 5px solid #256a57;
-  border-top: 5px solid #256a57;
-  border-bottom: 5px solid #256a57;
-  border-radius: 0px 25px 25px 0px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-} */
+
 .gallery-grid-item {
   background: linear-gradient(to bottom right, #ffffff, #f3fdf9);
   padding: 20px;
